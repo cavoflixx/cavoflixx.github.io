@@ -1,227 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CAVOFLIXX</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   
 </head>
 <body>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Menuyu bağla</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Companya<br>Adı</b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ev</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Vitrin</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Xidmətlər</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Dizaynerlər</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Paketlər</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Əlaqə</a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Companya Adı</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Daxili dizayn</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Vitrin</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
-  
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+   
+    <div class="header">
+        <h1>ASPA GROUP</h1>
+            <a href="#contact" class="o">Contact</a>
+            <a href="#about" class="v">About</a>
+            <a href="#group" class="a">Group</a>
+            <a href="#home" class="c">Home</a>
     </div>
-
-    <div class="w3-half">
-      <img src="atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Servislər</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Biz eviniz üçün nəyin yaxşı olduğuna və sizin üçün ən yaxşısına diqqət yetirən daxili dizayn xidmətiyik!</p>
-    <p>Bizim servislərimiz 99% təhlükəsizliklə evlərinizə çatdırılır və yüksək keyfiyyətə malikdir.Əyər servis zamanı əşyanız zərər görərsə bu xərc şirkət tərəfindən ödəniləcəkdir və ya sifariş etdiyiniz məhsulu bəyənmədinizsə məhsulu geri qaytararaq iadənizin 100% - ı geri ala bilərsiniz.Evlərə çatdırılma ödənişsizdir.
-    </p>
-  </div>
-  
-  <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Dizayner</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Dünyanın ən yaxşı komandası.</p>
-    <p>Bu saytın dizayneri aşağıdada yazıldığı kimi Cavo Hasanov əsil adı isə Cavidandır.Cavo yazılım işi ilə məşğul olan bir proqramistdir.O bu işə kiçik yaşlardan maraq salmışdır.İndi isə dizaynerliye maraq salmış və hal hazırdada dizaynerliklə məşğul olmaqdadır.Bu saytın dizaynı da Cavoya aiddir.
-    </p>
-    <p><b>İşçilərimiz düşünülmüş şəkildə seçilir</b>:</p>
-  </div>
-
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="maqa.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Maqa Efendiev</h3>
-          <p class="w3-opacity">Egoist formatçı</p>
-          <p>Maho Efendiev WİKMAGA şirkətinin qurucusudur.Həmçinin o şirkətin komputerlərinin problemlərindən cavabdehdir.</p>
+    <div class="container">
+        <nav class="homepage">
+        <h1><section id="home">Home</section></h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius dolorum quis tempora aperiam eveniet praesentium at fugit ad ratione, inventore qui autem adipisci, porro voluptatem voluptate provident, rem iure a aut minima magni illo! Ratione sapiente odio tempore consectetur fugit rerum maiores. Unde iste mollitia laudantium odit aliquid sequi omnis facilis delectus temporibus, nam architecto hic vero necessitatibus in quibusdam eligendi odio itaque exercitationem nesciunt autem vel alias labore recusandae laborum. Excepturi voluptas, delectus nemo aut error numquam architecto quo reprehenderit optio mollitia, beatae commodi doloribus repellendus distinctio.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, fuga? Soluta omnis distinctio quidem deleniti voluptate laudantium saepe atque sequi harum eveniet architecto, maiores libero aliquam, facilis aperiam beatae laboriosam.
+        </p>
+   </nav>
+    
+    <nav class="group">
+        <h1> <section id="group"></section> Group</h1>
+        <div class="items">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
         </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="me.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Cavo Hasanof</h3>
-          <p class="w3-opacity">Dizayner</p>
-          <p>Cavo Hasanof CAVOFLİXX şirkətinin qurucusudur.Özüdə həmçinin professional dizaynerdir.O şirkət saytlarını dizayn etməklə məşğuldur.</p>
+        <nav class="items">
+            <div class="item item3"></div>
+            <div class="item item4"></div>
         </div>
-      </div>
+    </nav>
+    <nav class="about">
+        <h1> <section id="about"></section> About</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laborum quas autem vero consequuntur, odio qui et non porro doloremque sit nobis impedit aut aspernatur minus. Odit consequuntur placeat modi iste impedit vel nihil unde, totam ullam accusantium itaque culpa molestias quam accusamus officia in recusandae ex praesentium asperiores! Inventore libero doloribus non quod dolores fuga est esse at sint quisquam veritatis cupiditate necessitatibus, expedita praesentium unde harum! Tempore mollitia facilis quos facere possimus. Dignissimos quas, soluta doloribus eveniet at laboriosam ullam porro deleniti inventore eum nihil sed corporis quos ipsum placeat ad quae assumenda autem nam. Assumenda, corrupti architecto. Ut ullam dolor, fuga ipsa, adipisci inventore, alias omnis cum repudiandae eveniet atque. Saepe laudantium assumenda sint hic quasi! Quibusdam dolorem quidem ut adipisci doloribus, assumenda error dolore voluptatum consectetur in nobis repellat culpa perspiciatis sit eum fugiat, quam fuga tenetur, impedit laudantium commodi suscipit sunt quia tempore. Sapiente fugit eaque fuga illo minima ipsa, omnis nisi magni accusantium sequi? Enim delectus possimus praesentium facere! Cupiditate quae vero minima maxime mollitia maiores quidem voluptatem pariatur, adipisci, quia doloribus! Quidem et esse dolores quos. Veritatis iusto voluptatum reprehenderit, quaerat praesentium, magnam dolores officia eum voluptas quo odit nemo vero dignissimos doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus ipsa commodi architecto quasi harum debitis magni sequi amet ab maxime, in molestias cumque omnis quo cum aut repellat ratione! Facilis tenetur rem, consequatur hic laboriosam amet recusandae rerum quidem sunt minus ipsum beatae voluptatem labore mollitia magnam voluptates accusamus nulla ad officiis, dolorem odit libero? Reprehenderit sed eos id distinctio, eius placeat, error consectetur deleniti sequi voluptatibus libero, laborum deserunt fuga! Quaerat delectus culpa odit. Nihil commodi alias quas itaque eos neque dolores nostrum, cumque adipisci ea delectus? Quam voluptatem rerum ipsam, nobis, assumenda dignissimos sint quis minima, maxime omnis maiores ullam atque magnam nostrum quos aut alias consequatur adipisci ratione dolorem recusandae! Enim nisi quidem, sit quas eaque voluptatibus autem aspernatur explicabo cupiditate temporibus? Suscipit ducimus doloribus in perspiciatis autem, tempora, optio aliquam facilis cumque, ea voluptates facere placeat fugit fugiat quasi laborum eum molestias provident eligendi expedita repellat dolor? Minima qui iure consectetur voluptatum molestias rem velit, cum explicabo voluptas modi similique neque porro est quas adipisci quia magni officia doloremque? Ad rerum sint dignissimos magni minus minima officiis et architecto non, atque aliquam assumenda? Fugit quidem suscipit id a aliquid quibusdam rem tempora illo mollitia sint nulla consectetur expedita eius accusantium officia necessitatibus optio ab ipsam, magni neque similique dolore. Dolor corporis eos sint magni rerum neque quo sequi impedit quasi cum a quam qui, magnam voluptatibus incidunt. Iste quibusdam, repudiandae molestias beatae consequuntur delectus ipsam, consequatur labore sequi accusamus optio perspiciatis facilis. Aut, incidunt. Earum obcaecati, aliquid sit assumenda minus dolorum, blanditiis facilis maiores voluptatibus cum labore exercitationem expedita reiciendis suscipit aperiam nihil? Veritatis ipsam alias voluptate odio est iure nihil, facilis, modi possimus earum officiis, blanditiis obcaecati nulla? Explicabo dolores ab recusandae impedit architecto commodi, adipisci unde, iusto non cumque necessitatibus ducimus porro sapiente!
+        </p>
+    </nav>
+    <nav class="contact">
+        <h1> <section id="contact"></section> Contact</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum adipisci officiis perspiciatis tempore dolor eos obcaecati voluptas, tenetur saepe, incidunt velit ea nam natus quia architecto explicabo. Dolor accusamus, facere dignissimos commodi enim est, molestias natus sequi blanditiis quasi repellendus iure illum, beatae ipsa excepturi nihil. Nihil consequatur laboriosam sint accusantium, quidem inventore eaque odit nostrum error, blanditiis molestiae soluta. Eum impedit illo iure expedita numquam nulla porro illum quia quasi delectus corporis temporibus laudantium, culpa cum facilis, ullam vitae! Aperiam reprehenderit modi, quas magni est fuga asperiores porro. Eius similique, quaerat excepturi repellendus expedita exercitationem quidem sunt quasi?
+            <br>
+            <br>
+                CONTACT NUMBER : <a href="https://www.whatsapp.com">+994 55 205 08 08</a>
+             </p>
+            </nav>
+        </nav>
     </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="anonim.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Nuro Aliev</h3>
-          <p class="w3-opacity">Fake hacker</p>
-          <p>Nuro Aliev TEAM şirkətinin qurucusudur.Nuro professional hackerdir.O bütün şirkətin komputerlərinin təhlükəsizliyinə cavabdehdir.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Paketlər</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Paketlər xüsusi məkanlarımızda hazırlanaraq xüsusi yük daşıma maşınları ilə fərqli filiallarımızdakı mağazalarımıza daşınaraq satışa hazır hala gətirilir və satışa çıxarılır.Mebellərimiz xüsusi ağaclardan və xüsusi ləvazimatlardan hazırlanaraq satışa çıxarılmaqdadır.
-    10 ilə qədər zəmanətlə və kompaniyalarımızdan istifadə etməklə mebelləri daha az məbləğ ödəməklə əldə edə bilərsiniz.Əyər endirimlərimizdən istifadə etmək istəyirsinizsə aşağıdakı xidmətlərimizdən istifadə edə bilərsiniz.
-    </p>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Əsas</li>
-        <li class="w3-padding-16">Döşəmə planlaması</li>
-        <li class="w3-padding-16">10 saat dəstək</li>
-        <li class="w3-padding-16">Fotoqrafiya</li>
-        <li class="w3-padding-16">Mebellərə 20% endirim</li>
-        <li class="w3-padding-16">Yaxşı razılaşma</li>
-        <li class="w3-padding-16">
-          <h2>$ 199</h2>
-          <span class="w3-opacity">Otaq başında</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">Giriş</button>
-        </li>
-      </ul>
-    </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Döşəmə planlaması</li>
-        <li class="w3-padding-16">50 saat dəstək</li>
-        <li class="w3-padding-16">Fotoqrafiya</li>
-        <li class="w3-padding-16">Mebellərə 50% endirim</li>
-        <li class="w3-padding-16">ƏLA razılaşma</li>
-        <li class="w3-padding-16">
-          <h2>$ 249</h2>
-          <span class="w3-opacity">Otaq başına</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Giriş</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Əlaqə</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Evinizi dizayn etməyimizi istəyirsiniz? Formanı doldurun və təfərrüatları burada doldurun :) Biz yeni insanlarla tanış olmağı sevirik!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Ad</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Mesaj</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Mesajı göndər</button>
-    </form>  
-  </div>
-
-<!-- End page content -->
-</div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by : CAVOFLIXX</p></div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-
 </body>
 </html>
