@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Home Work</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            display: flex;
+            flex: 100%;
+            background-color:black;
+            height: 15%;
+        }
+        .right{
+            float: left;
+            width: 20%;
+            height: 70%;
+            background-color: blue;
+        }
+        .main{
+            float: right;
+            width: 80%;
+            height: 70%;
+            background-color: white;
+        }
+        .photo{
+            width: 95%;
+            height: 92%;
+            flex-direction: row;
+            background-image: url();
+            margin: 2.5%;
+            background-size: cover;
+            background-color: black;
+        }
+        .footer{
+            display: flex;
+            width: 100%;
+            height: 15%;
+            background-color: black;
+        }
+        .box{
+            flex-shrink: 1;
+            width: 20%;
+            height: 45%;
+            margin: 0.3%;
+            background-color: rgba(176, 230, 28, 0.767);
+            text-align: center;
+            margin: 1.5%;
+        }
+        .box:hover{
+            background-color: black;
+            color: white;
+            transition: 1.5s;
+        }
+        @media (max-width:600px) {
+            .header{
+                flex-direction: column;
+               
+            }
+            .box{
+                flex-shrink: 0;
+                width: 16%;
+                height: 60%;
+            }
+            .box:hover{
+                background-color: black;
+                color: white;
+                transition: 1.5s;
+            }
+            .box1{
+                margin-top: 25%;
+            }
+            .main{
+                flex-shrink: 0;
+                margin-top: -113.55px;
+                height: 85%;
+            }
+            .right{
+                flex-shrink: 0;
+                margin-top: -113.55px;
+                height: 85%;
+            }
+            .footer{
+                height: 15.8%;
+            }
+            .photo{
+                padding-top: 8%;
+            }
+            p{
+                padding-top: 20%;
+            }
+            .right > p{
+                color: blue;
+
+            }
+            .footer > p{
+                margin-top: -19%;
+                color: aqua;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-right: 90px;
+            margin-top:20px ;
+            margin-left: 90px;
+        }
+        p{
+            margin-top: 9%;
+            color: white;
+            text-align: center;
+            user-select: none;
+        }
+        div > p{
+            color: white;
+            margin-top: 0%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+       <a href="#"><p class="btn btn-info">Home</p></a>
+       <a href="#"><p class="btn btn-info">About</p></a>
+       <a href="#"><p  class="btn btn-info" >Contact</p></a>
+        <a href="#"><p class="btn btn-info">Help</p></a>
+        <a href="#"><p class="btn btn-info">Innavation</p></a>
+    </div>
+    <div class="right">
+        <p class=" text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. In beatae veritatis labore laudantium accusamus nulla rem excepturi temporibus? Magni maiores error sequi cupiditate deserunt. Corporis quis, enim minima officia aliquid, at beatae ea officiis architecto, facilis maiores eum eius. Quaerat voluptatibus eligendi quod dolorum nostrum tempora libero eaque amet quisquam</p>
+    </div>
+    <div class="main">
+        <div class="photo"></div>
+    </div>
+    <div class="footer">
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem numquam officia, quo voluptatibus est reprehenderit optio tenetur ullam commodi dolorum dolor nulla totam quaerat cupiditate fugiat atque. Quos nostrum distinctio iusto! Totam, cum obcaecati eius veritatis consectetur explicabo porro voluptatibus tempora at beatae perferendis saepe aliquid eaque aspernatur quae voluptate.</p>
+    </div>
+    
+</body>
+</html>

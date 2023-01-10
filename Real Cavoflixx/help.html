@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>CAVOFLIXX + (HELP)</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0; 
+        }
+        .wrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: linear-gradient(90deg, rgba(2,0.6,1) 0%, rgb(12, 11, 11) 35%) ;
+        }
+        h2{
+            font-family: poppins;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translate(-50%,-50%);
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .box div{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: transparent;
+            border: 6px solid rgba(255, 255, 255, 0.8);
+        }
+        .box div:nth-child(1){
+            top: 12%;
+            left: 42%;
+            animation: animate 10s linear infinite;
+        }
+        .box div:nth-child(2){
+            top: 70%;
+            left: 50%;
+            animation: animate 7s linear infinite;
+        }
+        .box div:nth-child(3){
+            top: 17%;
+            left: 6%;
+            animation: animate 10s linear infinite;
+        }
+        .box div:nth-child(4){
+            top: 20%;
+            left: 60%;
+            animation: animate 10s linear infinite;
+        }
+        .box div:nth-child(5){
+            top: 67%;
+            left: 10%;
+            animation: animate 16s linear infinite;
+        }
+        .box div:nth-child(6){
+            top: 80%;
+            left: 70%;
+            animation: animate 12s linear infinite;
+        }
+        .box div:nth-child(7){
+            top: 60%;
+            left: 80%;
+            animation: animate 15s linear infinite;
+
+        }
+        .box div:nth-child(8){
+            top: 32%;
+            left: 25%;
+            animation: animate 16s linear infinite;
+        }
+        .box div:nth-child(9){
+            top: 90%;
+            left: 25%;
+            animation: animate 9s linear infinite;
+        }
+        .box div:nth-child(10){
+            top: 20%;
+            left: 80%;
+            animation: animate 5s linear infinite; 
+        }
+
+        @keyframes animate{
+            0%{
+                transform: scale(0) translateY(0) rotate(0);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1.3) translateY(-90px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        html,body{
+            height: 100%;
+        }
+        
+        *{
+            margin: 0;
+        }
+
+        p::first-line{
+            font-size: 45px;
+        }
+    p{
+       display: block;
+       text-align: center;
+
+    }
+    .c{
+        margin-bottom: 41%;
+        width: 100%;
+        height: 14%;
+        background-color: rgba(0, 0, 0, 0.6);
+        
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        
+    }
+    .cavo{
+        float: right;
+        display: block;
+        justify-content: center;
+        margin-bottom: 480px;   
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: 80%;
+        background-color: black;
+        
+    }
+    .cavo a {
+        position: relative;
+        display: inline-block;
+        padding: 15px 15px;
+        border: 2px double #0f0;
+        margin: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: #fff;
+        -webkit-box-reflect: below 0px linear-gradient
+        (transparent,#0002);
+        transition: 0.5s;
+    }  
+   
+    .cavo a:hover,
+    .cavo a:active
+    {
+        color: #000;
+        transition-delay: 0.5s;
+        box-shadow: 0 0 10px #0f0,
+        0 0 20px #0f0, 
+        0 0 40px #0f0, 
+        0 0 80px #0f0,
+        0 0 160px #0f0;
+    }
+    .cavo a span{
+        position: relative;
+        z-index: 100;
+    }
+    .cavo a:nth-child(1){
+        filter:hue-rotate(80deg)
+    }
+    .cavo a:nth-child(3){
+        filter:hue-rotate(80deg)
+    }
+    .cavo a:nth-child(5){
+        filter:hue-rotate(80deg)
+    }
+    .cavo a:nth-child(6){
+        filter:hue-rotate(80deg)
+    }
+
+
+    .cavo a::before{
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 2px;
+        background: #0f0;
+        box-shadow: 5px 0px 0 #0f0,
+                    5px 0px 0 #0f0;
+        transition: widht 0.5s, left 0.5s, height 0.5s,
+        box-shadow 0.5s;
+        transition-delay: 1s,0.5s,0s,0s;
+    }
+    .cavo a:hover::before{
+        width: 60%;
+        height: 100%;
+        left: -2px;
+        box-shadow: 5px 0 0 #0f0
+                    5px 0 0 #0f0;
+        transition-delay: 0s,0s,0.5s,1s;
+                    
+    }
+    .cavo a::after{
+        content: '';
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 2px;
+        background: #0f0;
+        box-shadow: -5px 0px 0 #0f0,
+                    -5px 0px 0 #0f0;
+        transition: widht 0.5s, left 0.5s, height 0.5s,
+        box-shadow 0.5s;
+        transition-delay: 1s,0.5s,0s,0s;
+    }
+    .cavo a:hover::after{
+        width: 60%;
+        height: 100%;
+        right: -2px;
+        box-shadow: -5px 0 0 #0f0
+                    -5px 0 0 #0f0;
+        transition-delay: 0s,0s,0.5s,1s;
+                    
+    }
+    h4{
+        position: relative;
+        text-align: center;
+        margin-top:21.5%;
+        margin-left:-60%;
+        color: rgb(226, 211, 211);
+        letter-spacing: 4px;
+    }
+    h4::first-line{
+        font-size: 30px;
+    }
+    h2{
+        position: relative;
+        text-align: center;
+        margin-left: -88%;
+        color: rgb(226, 211, 211);
+    }
+    h2::first-line{
+        font-size: 45px;
+    }
+    p{
+        position: relative;
+        text-align: center;
+        margin-left: 29%;
+        margin-top: -2%;
+        color: rgb(226, 211, 211);
+    }
+    p::first-line{
+        font-size: 30px;
+    }
+    h6{
+        color:rgb(10, 10, 10);
+        text-align: center;
+        padding-top: 25px;
+         
+    }
+
+    .z{
+        float: left;
+    }
+    .x{
+        float: left;
+    }
+    .v{
+        float: right;
+    }
+    .b{
+        float: right;
+    }
+    .n{
+        float: right;
+    }
+    .m{
+        float: right;
+    }
+    *{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body{
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+ul{
+  display: flex;
+  margin-left: 36%;
+  margin-top: 1%;
+}
+ul li{
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #171515;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: .5s;
+  
+  
+}
+ul li:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+  transform: scale(.9);
+  z-index: -1;
+  transition: .5s;
+}
+ul li:nth-child(1):before{
+  background: #4267B2;
+}
+ul li:nth-child(2):before{
+  background: #1DA1F2;
+}
+ul li:nth-child(3):before{
+  background: #E1306C;
+}
+ul li:nth-child(4):before{
+  background: #2867B2;
+}
+ul li:nth-child(5):before{
+  background: #ff0000;
+}
+ul li:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+}
+ul li:nth-child(1):hover:before{
+  box-shadow: 0 0 15px #4267B2;
+}
+ul li:nth-child(2):hover:before{
+  box-shadow: 0 0 15px #1DA1F2;
+}
+ul li:nth-child(3):hover:before{
+  box-shadow: 0 0 15px #E1306C;
+}
+ul li:nth-child(4):hover:before{
+  box-shadow: 0 0 15px #2867B2;
+}
+ul li:nth-child(5):hover:before{
+  box-shadow: 0 0 15px #ff0000;
+}
+ul li:nth-child(1):hover{
+  color: #456cba;
+  box-shadow: 0 0 15px #4267B2;
+  text-shadow: 0 0 15px #4267B2;
+}
+ul li:nth-child(2):hover{
+  color: #26a4f2;
+  box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2;
+}
+ul li:nth-child(3):hover{
+  color: #e23670;
+  box-shadow: 0 0 15px #E1306C;
+  text-shadow: 0 0 15px #E1306C;
+}
+ul li:nth-child(4):hover{
+  color: #2a6cbb;
+  box-shadow: 0 0 15px #2867B2;
+  text-shadow: 0 0 15px #2867B2;
+}
+ul li:nth-child(5):hover{
+  color: #ff1a1a;
+  box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+}
+.crl{
+    width: 95%;
+    height: 85.5%;
+    margin: 2.5%;
+    margin-top: -20%;
+    border-radius: 35px;
+    position: relative;
+    background-color: rgba(20, 18, 18, 0.7);
+}
+.crm{
+    width: 30%;
+    height: 10%;
+    padding-top:10px ;
+    margin-left: 50%;
+    position: relative;
+    background-color: rgba(157, 167, 157,0.4);
+    border-radius: 35px;
+}
+.cdm{
+    width: 70%;
+    height: 75%;
+    margin-left:29%;
+    margin-top: 1%;
+    border-radius: 35px;
+    background-color: #98b0be;
+}
+b{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 2%;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.w{
+    font-size: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>CAVOFLIXX</h2>
+        <h4><b>FIRST EDITION</b></h4>
+        <div class="crl">
+            <div class="crm">
+                <h1>HOW CAN I HELP YOU ?</h1>
+            </div>
+            <div class="cdm">
+                <b>If you want to take a person who has never played the piano and turn them into a virtuoso, how do you do it? You teach them. How does a newborn child learn the alphabet? You teach them. Software follows this principle too. If you want to turn a new user of your product into an expert, you have to teach them.
+                 Personally assisting every single person who uses your product is beyond the resources of almost every software company. But what you can do is give them the learning material they need to turn themselves into experts. Teachers call this “scaffolding”. We call it a help center.
+                 A help center is the hidden workhouse behind the flashy product. It’s the humble text, videos and GIFs that give your customers the knowledge they need when they need it most, getting your customers unstuck from their immediate problems (“Where can I update my settings?” “How do I update my password”).
+
+                 But FAQs alone aren’t going to inspire any new usage with your product. Your most impactful content, the content that turns trialing customers into paying, ones is enjoyable and motivational too. It’s designed to set your customers on the path to expertise.
+                 </b>
+                 <br>
+                 <br>
+                 <b>I COULDN'T HELP YOU ?</b>
+                 <br>
+                 <br>
+                 <br>
+                 <b class="w">CONTACT NUMBER: +994 70 916 07 77</b>
+            </div>
+            <ul>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="c">
+        <div class="cavo">
+            <a href="cavoflixxhome.html" class="z"><span>HOME</span></a>
+            <a href="aboutus.html" class="x"><span>ABOUT US</span></a>
+            <a href="help.html" class="b"><span>HELP</span></a>
+            <a href="innavation.html" class="n"><span>INNOVATION</span></a>
+            <a href="Los Angles/losangles.html" class="v"><span>HOMEWORK</span></a>
+        </div>
+     </div>
+</div>
+  
+    
+</body>
+</html>
