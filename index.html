@@ -1,227 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Cavoflixx</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>CAVOFLIXX (books)</title>
 </head>
 <body>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Menuyu bağla</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Companya<br>Adı</b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ev</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Vitrin</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Xidmətlər</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Dizaynerlər</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Paketlər</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Əlaqə</a>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Companya Adı</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Daxili Dizayn</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Vitrin</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
-  
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
-
-    <div class="w3-half">
-      <img src="atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Servislər</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Biz eviniz üçün nəyin yaxşı olduğuna və sizin üçün ən yaxşısına diqqət yetirən daxili dizayn xidmətiyik!</p>
-    <p>Bizim servislərimiz 99% təhlükəsizliklə evlərinizə çatdırılır və yüksək keyfiyyətə malikdir.Əyər servis zamanı əşyanız zərər görərsə bu xərc şirkət tərəfindən ödəniləcəkdir və ya sifariş etdiyiniz məhsulu bəyənmədinizsə məhsulu geri qaytararaq iadənizin 100% - ı geri ala bilərsiniz.Evlərə çatdırılma ödənişsizdir.
-    </p>
-  </div>
-  
-  <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Dizayner</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Dünyanın ən yaxşı komandası.</p>
-    <p>Bu saytın dizayneri aşağıdada yazıldığı kimi Cavo Hasanov əsil adı isə Cavidandır.Cavo yazılım işi ilə məşğul olan bir proqramistdir.O bu işə kiçik yaşlardan maraq salmışdır.İndi isə dizaynerliye maraq salmış və hal hazırdada dizaynerliklə məşğul olmaqdadır.Bu saytın dizaynı da Cavoya aiddir.
-    </p>
-    <p><b>İşçilərimiz düşünülmüş şəkildə seçilir</b>:</p>
-  </div>
-
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="maqa.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Maqa Efendiev</h3>
-          <p class="w3-opacity">Egoist formatçı</p>
-          <p>Maho Efendiev WİKMAGA şirkətinin qurucusudur.Həmçinin o şirkətin komputerlərinin problemlərindən cavabdehdir.</p>
+  <div class="bbb">
+    <nav class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><p>Cavoflixx</p></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"><p>Home</p> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"><p>About</p></a>
+              </li>
+              <li class="nav-item">
+                <a class=" nav-link" href="#contact"><p>Contact</p></section></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <p>
+                  Change site
+                </p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Cavoflixx/interior_design.html">First site</a></li>
+                  <li><a class="dropdown-item" href="Cavoflixx_our/index.html">Second site</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="me.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Cavo Hasanof</h3>
-          <p class="w3-opacity">Dizayner</p>
-          <p>Cavo Hasanof CAVOFLİXX şirkətinin qurucusudur.Özüdə həmçinin professional dizaynerdir.O şirkət saytlarını dizayn etməklə məşğuldur.</p>
+      </nav>
+      </nav>
+    <nav class="home">
+<section id="home">      <p class="display-5 m-3">HOME</p></section> 
+      <table class="table table-bordered table-dark table-striped table-hover">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Author</th>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Bilinmeyen bir kadinin mektubu</td>
+            <td>1922</td>
+            <td>Stefan Zweig</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Montsuzlar</td>
+            <td>2017</td>
+            <td>Omer Acik</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td >Yere yakin yildizlara uzak</td>
+            <td>2020</td>
+            <td>Emine Tavuz</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Enkaz altindakiler</td>
+            <td>2022</td>
+            <td>Beyza Alkoc</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td >Sokak nobetcileri</td>
+            <td>2020</td>
+            <td>Aslı Arslan</td>
+
+          </tr>
+      </table>
+      <br>
+      <br>
+    </nav>
+    
+
+
+    <nav class="about">
+   <section id="about"> <p class="display-3 m-3">About</p></section>
+        <div class="col-10">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <div class="bbkm">
+            <h4 id="list-item-1" class="m-2">Bilinmeyen bir kadinin mektubu</h4>
+            <p class="m-2">Stefan Zweig wrote his long story Letter from an Unknown Woman (Brief einer Unbekannten) in the first half of the 1920s. We only know the heroine of Letter from an Unknown Woman as the author of a long letter. The "sender" of this letter, which the woman wrote for the man she loved all her life, has no name. At the beginning of the letter there is only one address: "To you, who never knew me". The woman is always willing to live her great passion as an "unknown", that is, alone, there is only one "side" in this love story, not "sides". Can this be called true love? Zweig invites his readers, once again, to an unprecedented journey in human psychology. It is also possible that at the end of this new journey, he aimed to reach the hitherto unknown shores of the concept of "absolute love"!</p>
+            <hr>
+            <br>
+            <figure class="text-end">
+              <figcaption class="blockquote-footer">
+                Author : <cite title="Source Title">Stefan Zweig</cite>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="montsuzlar">
+            <h4 class="m-3" id="list-item-2">Montsuzlar</h4>
+            <p class="m-2">Educator and writer Ömer Açık, who is very popular with his powerful narrative, tells a philosophical story that stretches from school corridors to life in his third novel. Questioning the frequently used alphabetical order, the novel draws attention with its surprising plot. Reminding the forgotten power of the word, the author opens to discussion important concepts such as justice, freedom and solidarity in the company of realistic characters who are far from violence. Ömer Açık's latest novel appeals to readers of all ages, whose children's books called Menekşe Station and My Father is Lifetime Man, in which he tells the stories of the hopeful neighborhood, are read with pleasure.</p>
+            <br>
+            <figure class="text-end">
+              <figcaption class="blockquote-footer">
+                Author : <cite title="Source Title">Omer Acik</cite>
+              </figcaption>
+            </figure>
+            <hr>
+          </div>
+          <div class="yyyu">
+            <h4 id="list-item-3" class="m-3">Yere yakin yildizlara uzak</h4>
+            <p class="m-2">“Every heartbeat had a story.” When Bestegül left home to go to school that morning, as she does every morning, she did not yet know that her destiny would meet with thirteen other people. He got on the subway that morning and traveled to the last stop, but could not get out of the last stop. He and thirteen others were stranded in the subway station with him, and at that moment the first heartbeat of their shared story went deafening. They had things to contend with under the rubble. Hunger, thirst, longing, grief, sadness, death... While their hearts were beating with fear, one of them died suddenly and the others followed him one by one for interesting reasons. While all these deaths left deep scars on their hearts and brains, all they could do was wait to be rescued from the rubble. Now one of us will get out of here, get out of here. He'll take the photos we've taken and put them in a frame, hang the frame on a wall, and watch us in front of him. Time will freeze at that moment. Now one of us will survive but his left will be dead. One of us will grow old in a frame hung on one's wall. For one of us the song will end, but we will both stop dancing. Do you understand? You do not understand. Because you stopped hearing me. Anyway, I talk too.</p>
+            <br>
+            <figure class="text-end">
+              <figcaption class="blockquote-footer">
+                Author : <cite title="Source Title">Emine Tavuz</cite>
+              </figcaption>
+            </figure>
+            <hr>
+          </div>
+          <div class="ea">
+            <h4 id="list-item-4" class="m-3">Enkaz altindakiler</h4>
+            <p class="m-2">When you open your eyes, you will wake up in a destroyed house. Your only way out will be underground. The starting point where you find yourself is a plateau surrounded by cameras on every side and watched everywhere. Your only goal is to follow the clues in the field and find your home. The winner will be determined as soon as all contestants find their homes. So, do you want us to lose you?</p>
+            <br>
+            <figure class="text-end">
+              <figcaption class="blockquote-footer">
+                Author : <cite title="Source Title">Beyza Alkoc</cite>
+              </figcaption>
+            </figure>
+            <hr>
+          </div>
+          <div class="sn">
+            <h4 id="list-item-5" class="m-3">Sokak nobetcileri</h4>
+            <p class="m-2">When you open your eyes, you will wake up in a destroyed house. Your only way out will be underground. The starting point where you find yourself is a plateau surrounded by cameras on every side and watched everywhere. Your only goal is to follow the clues in the field and find your home. The winner will be determined as soon as all contestants find their homes. So, do you want us to lose you?</p>
+            <br>
+            <figure class="text-end">
+            <figcaption class="blockquote-footer">
+              Author : <cite title="Source Title">Asli Arslan</cite>
+            </figcaption>
+          </figure>
         </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="anonim.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Nuro Aliev</h3>
-          <p class="w3-opacity">Fake hacker</p>
-          <p>Nuro Aliev TEAM şirkətinin qurucusudur.Nuro professional hackerdir.O bütün şirkətin komputerlərinin təhlükəsizliyinə cavabdehdir.</p>
+          </div>
         </div>
+        <br>
       </div>
+    </nav>
+    <nav class="contact">
+       <section id="contact"><p class="display-3 m-3">CONTACT</p> </section>
+      <p class="m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique, facere soluta optio pariatur aliquid fugit quia voluptas delectus dignissimos voluptatibus sed deleniti nostrum. Voluptates laudantium doloremque cum itaque quia, distinctio dolorem quae libero ut delectus blanditiis non sint accusamus illum eos facilis quaerat accusantium veritatis porro adipisci, repellat quam optio earum quisquam? Officia expedita aliquid, quod rerum numquam enim Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ad aliquid corporis eaque fuga quis! Voluptates praesentium dolores, quaerat ipsam ea maxime obcaecati earum dolore, veritatis voluptatum tenetur repellendus, sit laborum quibusdam fuga nesciunt eos. Officia, deserunt tenetur dolorem quod animi ipsum obcaecati aut ipsam quasi, mollitia laborum eaque qui facere pariatur molestias necessitatibus maxime a, accusantium numquam doloremque impedit!</p>
+      <br><br><br><br><br>
+      <h3 class="m-2">Contact number : <a href="https://www.whatsapp.com
+        "> +994 70 916 07 77</a></h3>
+        <br>
+    </nav>
     </div>
-  </div>
+    <nav class="footer">
+      <p class="p text text-danger "><i>DESIGNED BY : CAVOFLIXX </i></p>
+    </nav>
 
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Paketlər</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Paketlər xüsusi məkanlarımızda hazırlanaraq xüsusi yük daşıma maşınları ilə fərqli filiallarımızdakı mağazalarımıza daşınaraq satışa hazır hala gətirilir və satışa çıxarılır.Mebellərimiz xüsusi ağaclardan və xüsusi ləvazimatlardan hazırlanaraq satışa çıxarılmaqdadır.
-    10 ilə qədər zəmanətlə və kompaniyalarımızdan istifadə etməklə mebelləri daha az məbləğ ödəməklə əldə edə bilərsiniz.Əyər endirimlərimizdən istifadə etmək istəyirsinizsə aşağıdakı xidmətlərimizdən istifadə edə bilərsiniz.
-    </p>
-  </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Əsas</li>
-        <li class="w3-padding-16">Döşəmə planlaması</li>
-        <li class="w3-padding-16">10 saat dəstək</li>
-        <li class="w3-padding-16">Fotoqrafiya</li>
-        <li class="w3-padding-16">Mebellərə 20% endirim</li>
-        <li class="w3-padding-16">Yaxşı razılaşma</li>
-        <li class="w3-padding-16">
-          <h2>$ 199</h2>
-          <span class="w3-opacity">Otaq başında</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">Giriş</button>
-        </li>
-      </ul>
-    </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Döşəmə planlaması</li>
-        <li class="w3-padding-16">50 saat dəstək</li>
-        <li class="w3-padding-16">Fotoqrafiya</li>
-        <li class="w3-padding-16">Mebellərə 50% endirim</li>
-        <li class="w3-padding-16">ƏLA razılaşma</li>
-        <li class="w3-padding-16">
-          <h2>$ 249</h2>
-          <span class="w3-opacity">Otaq başına</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Giriş</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Əlaqə</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Evinizi dizayn etməyimizi istəyirsiniz? Formanı doldurun və təfərrüatları burada doldurun :) Biz yeni insanlarla tanış olmağı sevirik!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Ad</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Mesaj</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Mesajı göndər</button>
-    </form>  
-  </div>
-
-<!-- End page content -->
-</div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by : CAVOFLIXX</p></div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
